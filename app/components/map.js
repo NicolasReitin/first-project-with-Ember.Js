@@ -15,12 +15,9 @@ export default class MapComponent extends Component {
 
     // on retourne l'URL par petit bout avec les arguments
     return `${GEOAPIFY_API}${dimensions}${coordinates}${accessToken}`;
-
   }
-
 
   get token() {
     return encodeURIComponent(ENV.GEOAPIFY_ACCESS_TOKEN);
   }
-
 }

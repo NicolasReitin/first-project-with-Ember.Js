@@ -29,22 +29,22 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       src.startsWith('https://maps.geoapify.com/'),
-      'the src starts with "https://maps.geoapify.com/"'
+      'the src starts with "https://maps.geoapify.com/"',
     );
 
     assert.ok(
       src.includes('lonlat:-122.4184,37.7797'),
-      'the src should include the lon,lat,zoom parameter'
+      'the src should include the lon,lat,zoom parameter',
     );
 
     assert.ok(
       src.includes('width=150&height=120'),
-      'the src should include the width,heigh parameter'
+      'the src should include the width,heigh parameter',
     );
 
     assert.ok(
       src.includes(`apiKey=${token}`),
-      'the src should include the escaped access token'
+      'the src should include the escaped access token',
     );
   });
 
@@ -56,7 +56,6 @@ module('Integration | Component | map', function (hooks) {
       width: 150,
       height: 120,
     });
-
 
     await render(hbs`<Map
       @lat={{this.lat}}
@@ -70,13 +69,12 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       img.src.includes('-122.4194,37.7749'),
-      'the src should include the lon,lat,zoom parameter'
+      'the src should include the lon,lat,zoom parameter',
     );
-
 
     assert.ok(
       img.src.includes('width=150&height=120'),
-      'the src should include the width,height parameter'
+      'the src should include the width,height parameter',
     );
 
     this.setProperties({
@@ -87,12 +85,12 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       img.src.includes('-122.4194,37.7749'),
-      'the src should include the lon,lat parameter'
+      'the src should include the lon,lat parameter',
     );
 
     assert.ok(
       img.src.includes('width=300&height=200'),
-      'the src should include the width,height and @2x parameter'
+      'the src should include the width,height and @2x parameter',
     );
 
     this.setProperties({
@@ -102,12 +100,12 @@ module('Integration | Component | map', function (hooks) {
 
     assert.ok(
       img.src.includes('-122.3321,47.6062'),
-      'the src should include the lon,lat parameter'
+      'the src should include the lon,lat parameter',
     );
 
     assert.ok(
       img.src.includes('width=300&height=200'),
-      'the src should include the width,height and @2x parameter'
+      'the src should include the width,height and @2x parameter',
     );
   });
 

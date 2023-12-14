@@ -8,7 +8,7 @@
       "city": "Portland",
       "location": {
         "lat": 45.5175,
-        "lng": -122.6801
+        "lon": -122.6801
       },
       "category": "Apartment",
       "bedrooms": 3,

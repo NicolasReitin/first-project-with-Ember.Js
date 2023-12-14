@@ -8,7 +8,7 @@
       "city": "San Francisco",
       "location": {
         "lat": 37.7749,
-        "lng": -122.4194
+        "lon": -122.4194
       },
       "category": "Estate",
       "bedrooms": 15,

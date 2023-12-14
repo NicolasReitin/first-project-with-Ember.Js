@@ -8,7 +8,7 @@
       "city": "Seattle",
       "location": {
         "lat": 47.6062,
-        "lng": -122.3321
+        "lon": -122.3321
       },
       "category": "Condo",
       "bedrooms": 1,
