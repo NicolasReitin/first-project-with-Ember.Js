@@ -1,0 +1,13 @@
+<div class="map">
+  <img
+    alt="Map image at coordinates {{@lat}},{{@lon}}"
+    ...attributes
+    
+    {{!-- src="https://maps.geoapify.com/v1/staticmap?style=osm-bright&width={{@width}}&height={{@height}}&center=lonlat:{{@lon}},{{@lat}}&zoom={{@zoom}}&apiKey={{this.token}}" --}}
+    
+    {{!-- raccourcis de l'URL ci-dessus a voir dans map.js --}}
+    src={{this.src}}
+
+    width={{@width}} height={{@height}}
+  >
+</div>

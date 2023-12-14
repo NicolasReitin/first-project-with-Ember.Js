@@ -44,5 +44,8 @@ module.exports = function (environment) {
     // here you can enable a production-specific feature
   }
 
+  ENV.GEOAPIFY_ACCESS_TOKEN = '4ab751d00e364c32bf041c4eecb2c825';
+  // ENV.MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiZW1iZXJqcyIsImEiOiJjazBycmxldGwwMDVvM2VxajdkYjl1OHY0In0.YeeBOuhKFJmuL3Tt9ueMgg';
+
   return ENV;
 };
