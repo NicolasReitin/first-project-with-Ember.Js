@@ -44,11 +44,9 @@ module('Acceptance | super rentals', function (hooks) {
     assert.strictEqual(tweetURL.host, 'twitter.com');
 
     assert.strictEqual(
-
       tweetURL.searchParams.get('url'),
 
-      `${window.location.origin}/rentals/grand-old-mansion`
-
+      `${window.location.origin}/rentals/grand-old-mansion`,
     );
   });
 

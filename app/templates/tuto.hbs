@@ -1,0 +1,15 @@
+<div>
+    {{this.prix}}
+    <br>
+
+    {{#if (morethan this.prix 200)}}
+    c est cher
+    {{else}}
+    c est pas cherr
+    {{/if}}
+
+    <button {{action this.prixplusdix}}>
+        Modifier
+    </button>
+
+</div>
